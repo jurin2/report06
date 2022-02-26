@@ -159,7 +159,7 @@ address,i{
     z-index: 900;
     width: 100%;
     height: 300px;
-    transition: 0.3s;
+    /* transition: 0.3s; */
 }
 .slider .slide02{
     top: 100%;

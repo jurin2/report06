@@ -34,22 +34,24 @@
 
 
  // 슬라이드
- let slider = document.querySelectorAll('.slide');
+ let slideImg = document.querySelectorAll('.slide');
  let tmp = 0;
-//  console.log(slider);
 
  setInterval(function(){
      tmp+=100;
+    
      if(tmp==300){
-         tmp=0;
-         for(let idx=0; idx<slider.length; idx++){
-             slider[idx].style.transition = '0';
-         }
+        tmp=0;
      }
-     for(let idx=0; idx<slider.length; idx++){
-         slider[idx].style.transform = 'translateY(-'+ tmp +'%)';
+     for(let idx=0; idx<slideImg.length; idx++){
+         slideImg[idx].style.transform = 'translateY(-'+ tmp +'%)';
+         slideImg[idx].style.transition = '0.3s';
      }
  },3000);
+
+
+
+
 
 
  // 공지사항/갤러리 탭메뉴
