@@ -36,7 +36,7 @@
  // 슬라이드
  let slider = document.querySelectorAll('.slide');
  let tmp = 0;
- console.log(slider);
+//  console.log(slider);
 
  setInterval(function(){
      tmp+=100;
