@@ -42,7 +42,13 @@
     
      if(tmp==300){
         tmp=0;
-     }
+        setTimeout(function(){
+            for(let idx=0; idx<slideImg.length; idx++){
+                slideImg[idx].style.transform = 'translateY(0)';
+                slideImg[idx].style.transition = '0s';
+            }  
+        })
+    }
      for(let idx=0; idx<slideImg.length; idx++){
          slideImg[idx].style.transform = 'translateY(-'+ tmp +'%)';
          slideImg[idx].style.transition = '0.3s';
